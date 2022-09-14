@@ -1,6 +1,6 @@
 'use strict';
 
-const othersFile = "others.json";
+const othersFile = "other.json";
 const allWebsites = [
     { "Main": [
         { name: "Github", url: "https://github.com/luis-caldas", description: "Personal Github" },
