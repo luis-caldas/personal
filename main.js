@@ -14,6 +14,7 @@ function main(websitesData) {
     let createLink = (name, url, description) => {
         let link = $("<a>", {
             href: url,
+            ref: "noreferrer noopener",
             class: "d-block btn btn-lg btn-round btn-secondary fw-bold border-white bg-white"
         }).append(name.toUpperCase());
         return $("<div>", { class: "m-2 float-start", title: description.toUpperCase() }).append(link);
