@@ -1,5 +1,7 @@
 'use strict';
 
+const shouldFixSize = false;
+const sizeClassName = "widest";
 const othersFile = "other.json";
 const allWebsites = [
     { "Main": [
@@ -17,7 +19,9 @@ function main(websitesData) {
             ref: "noreferrer noopener",
             class: "d-block btn btn-lg btn-round btn-secondary fw-bold border-white bg-white"
         }).append(name.toUpperCase());
-        return $("<div>", { class: "m-2 float-start", title: description.toUpperCase() }).append(link);
+        return $("<div>", { class: "m-2 float-start", title: description.toUpperCase() })
+                .addClass(sizeClassName)
+                .append(link);
     };
     let createBlock = (linksList, blockName) => {
         let block = $("<div>", { class: "d-grid p-2" });
@@ -51,9 +55,21 @@ function main(websitesData) {
 };
 
 $( document ).ready(function() {
+
+    function fixSize() {
+        let classIdentificator = $(`.${sizeClassName}`);
+        classIdentificator.width(Math.max.apply(Math, classIdentificator.map(function() {
+            return $(this).width();
+        }).get()));
+    }
+
     $.getJSON(othersFile, function(data){
         main(data);
-    }).fail(function(){
+    }).fail(function() {
         main(allWebsites);
+    }).always(() => {
+        if (shouldFixSize)
+            fixSize();
     });
+
 });
