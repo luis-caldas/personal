@@ -22,6 +22,11 @@ const allWebsites = [
     { "Quick": [
         { name: "SpeedTest", url: "https://fast.com", description: "Internet Speed Test"},
         { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
+        { name: "Airspace", url: "https://airspace.flyryte.com", description: "IAA Map" },
+        { name: "FlightRadar", url: "https://www.flightradar24.com", description: "Flight Radar" },
+        { name: "METAR", url: "https://metar-taf.com", description: "METAR & TAFs" },
+        { name: "NOTAMS", url: "https://www.iaa.ie/air-traffic-management/notam", description: "IAA NOTAMS" },
+        { name: "Windy", url: "https://www.windy.com", description: "Weather Map" },
         { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
         { name: "9Anime", url: "https://9anime.gs/home", description: "Anime Stream" },
         { name: "Pirate Bay", url: "https://thepiratebay.org", description: "Torrent Tracker" },
