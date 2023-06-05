@@ -7,49 +7,66 @@ const shouldFixSize = false;
 // Name of the class of the size
 const sizeClassName = "widest";
 
-// Merge quick section with local
-const mergeQuick = true;
-const quickName = "Quick";
+// Merge sections with the same names
+const mergeSections = true;
 
 // File and configuration
 const othersFile = "other.json";
-const allWebsites = [
+const topInfo = [
     { "Main": [
-        { name: "Github", url: "https://github.com/luis-caldas", description: "Personal Github" },
-        { name: "Flashing", url: "https://morse.my.to", description: "Flashing training website" },
         { name: "Email", url: "https://wednesday.mxrouting.net/webmail", description: "Email website" }
+    ]}
+];
+const bottomInfo = [
+    { "NixOS": [
+        { name: "Packages", url: "https://search.nixos.org/packages", description: "NixOS Search Packages" },
+        { name: "Options", url: "https://search.nixos.org/options", description: "NixOS Search Options" },
+        { name: "Home-Manager", url: "https://rycee.gitlab.io/home-manager/options.html", description: "Home Manager Options for NixOS" }
     ]},
-    { "Quick": [
-        { name: "SpeedTest", url: "https://fast.com", description: "Internet Speed Test"},
-        { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
+    { "More": [
+        { name: "Github", url: "https://github.com/luis-caldas", description: "Personal Github" },
+        { name: "Flashing", url: "https://morse.my.to", description: "Flashing training website" }
+    ]},
+    { "SpeedTest": [
+        { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
+        { name: "Speedtest", url: "https://www.speedtest.net", description: "Internet Speed Test" },
+        { name: "Eir", url: "https://www.eir.ie/helpandsupport/broadbandspeedtest/", description: "Internet Speed Test" }
+    ]},
+    { "Flight": [
         { name: "Airspace", url: "https://airspace.flyryte.com", description: "IAA Map" },
         { name: "FlightRadar", url: "https://www.flightradar24.com", description: "Flight Radar" },
         { name: "METAR", url: "https://metar-taf.com", description: "METAR & TAFs" },
         { name: "NOTAMS", url: "https://www.iaa.ie/air-traffic-management/notam", description: "IAA NOTAMS" },
-        { name: "Windy", url: "https://www.windy.com", description: "Weather Map" },
-        { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
+        { name: "Windy", url: "https://www.windy.com", description: "Weather Map" }
+    ]},
+    { "Media": [
+        { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
         { name: "9Anime", url: "https://9anime.gs/home", description: "Anime Stream" },
-        { name: "Pirate Bay", url: "https://thepiratebay.org", description: "Torrent Tracker" },
-        { name: "RARBG", url: "https://rargb.to", description: "Torrent Tracker" },
-        { name: "YTS", url: "https://yts.mx", description: "Movies/ Series Torrent Tracker" },
         { name: "BopeBox", url: "https://dopebox.to", description:"Movies / Series Stream" },
         { name: "123Movies", url: "https://0123movies.com", description: "Movies / Series Stream" }
+    ]},
+    { "Files": [
+        { name: "Authority", url: "https://raw.githubusercontent.com/luis-caldas/mypub/master/ssl/ca.pem", description: "My certificate authority" }
     ]}
 ];
+// Create the entire set
+const allInfo = topInfo.concat(bottomInfo);
 
 // Main function when website loads
 function main(websitesData) {
 
     // Functions that create blocks and links
-    let createLink = (name, url, description) => {
+    let createLink = (name, url, description, isDownload) => {
         let link = $("<a>", {
             href: url,
             ref: "noreferrer noopener",
             class: "d-block btn btn-lg btn-round btn-secondary fw-bold border-white bg-white"
         }).append(name.toUpperCase());
+        if (isDownload)
+            link.attr("download", "");
         return $("<div>", { class: "m-2 float-start", title: description.toUpperCase() })
-                .addClass(sizeClassName)
-                .append(link);
+               .addClass(sizeClassName)
+               .append(link);
     };
     let createBlock = (linksList, blockName) => {
         let block = $("<div>", { class: "d-grid p-2" });
@@ -71,7 +88,8 @@ function main(websitesData) {
         let firstName = Object.keys(eachBlock)[0];
         let allLinks = [];
         eachBlock[firstName].forEach(function (eachLink) {
-            allLinks.push(createLink(eachLink.name, eachLink.url, eachLink.description));
+            let isDownload = "download" in eachLink && eachLink.download === true;
+            allLinks.push(createLink(eachLink.name, eachLink.url, eachLink.description, isDownload));
         });
         allBlocks.push(createBlock(allLinks, firstName));
     });
@@ -83,7 +101,7 @@ function main(websitesData) {
         inserter.append(eachBlock);
     });
 
-};
+}
 
 $( document ).ready(function() {
 
@@ -96,53 +114,93 @@ $( document ).ready(function() {
     }
 
     // Try to get the file if possible
-    $.getJSON(othersFile, function(data){
+    $.getJSON(othersFile, function(data) {
         // If data is acquired merge if possible
 
-        // Initialise the new data
-        let newData = data;
+        // Create temporary lists for us to store items that are merged or not
+        let tempPure = [];
+        let tempMerged = [];
 
         // Check if new data should be merged and merge it
-        if (mergeQuick) {
+        if (mergeSections) {
 
-            // Function to find the part of object with name
-            let filterCorrect = each => Object.keys(each)[0] == quickName;
+            // Get the list of all the entries list
+            let listLocalTabs = allInfo.map(each => Object.keys(each)).flat(1);
 
-            // Merge if possible
-            newData = newData.map(each => {
+            // Iterate all the items in the new data
+            data.forEach(each => {
 
-                // If this is the new object
-                if (filterCorrect(each)) {
+                // Get the name of the object we are trying to merge
+                let localName = Object.keys(each)[0]
 
-                    // Assign new inside data to var
-                    let otherWebsiteDataInside = each[Object.keys(each)[0]];
+                // Check if this object should be tried to merge
+                if (listLocalTabs.includes(localName)) {
 
-                    // Get the extra local data
-                    let localWebsiteDataFull = allWebsites.filter(filterCorrect);
-                    let localWebsiteDataInside = Object.values(Object.values(localWebsiteDataFull)[0])[0];
+                    // Get the data that is inside the remotely received item
+                    let remoteWebsiteDataInside = each[localName];
+
+                    // Get the local data that matches the name
+                    let localWebsiteDataFull = allInfo.filter(eachItem => Object.keys(eachItem)[0] === localName);
+                    let localWebsiteDataInside = Object.values(localWebsiteDataFull[0])[0];
 
                     // Create new object and its parts
                     let newObj = {};
 
                     // Add to the object
-                    newObj[quickName] = otherWebsiteDataInside.concat(localWebsiteDataInside);
+                    newObj[localName] = localWebsiteDataInside.concat(remoteWebsiteDataInside);
 
                     // Return it
-                    return newObj;
+                    tempMerged.push(newObj);
 
                 } else
-                    return each;
+                    tempPure.push(each);
 
             })
+
+        } else
+            tempPure = data;
+
+        // Replace merged data into their new spots
+        let mergedNames = tempMerged.map(each => Object.keys(each)).flat(1)
+
+        // Create variables to store new info
+        let newItems = {
+            top: [],
+            bottom: []
         }
 
-        console.log(newData);
+        // Create generic filtering function
+        let newFixBlock = listNewItems =>
+            listNewItems.forEach( eachNewItem =>
+                eachNewItem.info.forEach(eachItem => {
+                    let localName = Object.keys(eachItem)[0];
+                    newItems[eachNewItem.new] = newItems[eachNewItem.new].concat(
+                        mergedNames.includes(localName) ?
+                            tempMerged.filter(eachMerged => Object.keys(eachMerged)[0] === localName) :
+                            [ eachItem ]
+                    )
+                })
+            )
 
-        // Call main with the new data
+        // Run filtering function for new blocks
+        newFixBlock([
+            { info: topInfo, new: "top" },
+            { info: bottomInfo, new: "bottom" },
+
+        ])
+
+        // Build the whole structure
+        let newData = [];
+        newData = newData.concat(newItems.top);  // The new merged top
+        newData = newData.concat(tempPure);  // Keep the pure stuff in the middle
+        newData = newData.concat(newItems.bottom);  // The new merged bottom
+
+        // Call main with the newly built data
         main(newData);
+
     }).fail(function() {
         // If no file is found just use local data
-        main(allWebsites);
+        main(allInfo);
     }).always(() => {
         // Fix size if selected
         if (shouldFixSize)
