@@ -43,7 +43,7 @@ const bottomInfo = [
     { "Media": [
         { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
         { name: "9Anime", url: "https://9anime.gs/home", description: "Anime Stream" },
-        { name: "BopeBox", url: "https://dopebox.to", description:"Movies / Series Stream" },
+        { name: "DopeBox", url: "https://dopebox.to", description:"Movies / Series Stream" },
         { name: "123Movies", url: "https://0123movies.com", description: "Movies / Series Stream" }
     ]},
     { "Files": [
