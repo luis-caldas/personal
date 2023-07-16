@@ -44,7 +44,8 @@ const bottomInfo = [
         { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
         { name: "9Anime", url: "https://9anime.gs/home", description: "Anime Stream" },
         { name: "DopeBox", url: "https://dopebox.to", description:"Movies / Series Stream" },
-        { name: "123Movies", url: "https://0123movies.com", description: "Movies / Series Stream" }
+        { name: "123Movies", url: "https://0123movies.com", description: "Movies / Series Stream" },
+        { name: "FMovies", url: "https://fmovies.wtf/", description: "Movies / Series Stream" }
     ]},
     { "Files": [
         { name: "Authority", url: "https://raw.githubusercontent.com/luis-caldas/mypub/master/ssl/ca.pem", description: "My certificate authority" }
@@ -108,8 +109,8 @@ $( document ).ready(function() {
 
     // Function that normalises the width of the links
     function fixSize() {
-        let classIdentificator = $(`.${sizeClassName}`);
-        classIdentificator.width(Math.max.apply(Math, classIdentificator.map(function() {
+        let classIdentifier = $(`.${sizeClassName}`);
+        classIdentifier.width(Math.max.apply(Math, classIdentifier.map(function() {
             return $(this).width();
         }).get()));
     }
