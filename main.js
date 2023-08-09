@@ -14,7 +14,8 @@ const mergeSections = true;
 const othersFile = "other.json";
 const topInfo = [
     { "Main": [
-        { name: "Email", url: "https://wednesday.mxrouting.net/webmail", description: "Email website" }
+        { name: "Email", url: "https://wednesday.mxrouting.net/webmail", description: "Email website" },
+        { name: "Message", url: "https://app.schildi.chat/", description: "Messaging website" }
     ]}
 ];
 const bottomInfo = [
