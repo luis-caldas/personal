@@ -22,7 +22,7 @@ const bottomInfo = [
     { "NixOS": [
         { name: "Packages", url: "https://search.nixos.org/packages", description: "NixOS Search Packages" },
         { name: "Options", url: "https://search.nixos.org/options", description: "NixOS Search Options" },
-        { name: "Home-Manager", url: "https://rycee.gitlab.io/home-manager/options.html", description: "Home Manager Options for NixOS" }
+        { name: "Home Manager", url: "https://mipmip.github.io/home-manager-option-search", description: "Home Manager Options for NixOS" }
     ]},
     { "More": [
         { name: "Github", url: "https://github.com/luis-caldas", description: "Personal Github" },
