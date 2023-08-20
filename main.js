@@ -28,6 +28,9 @@ const bottomInfo = [
         { name: "Github", url: "https://github.com/luis-caldas", description: "Personal Github" },
         { name: "Flashing", url: "https://morse.my.to", description: "Flashing training website" }
     ]},
+    { "Dev": [
+        { name: "DevDocs", url: "https://devdocs.io", description: "Documentation for most programming languages" }
+    ]},
     { "SpeedTest": [
         { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
         { name: "Speedtest", url: "https://www.speedtest.net", description: "Internet Speed Test" },
@@ -44,9 +47,13 @@ const bottomInfo = [
     { "Media": [
         { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
         { name: "9Anime", url: "https://9anime.gs/home", description: "Anime Stream" },
+        { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
         { name: "DopeBox", url: "https://dopebox.to", description:"Movies / Series Stream" },
         { name: "123Movies", url: "https://0123movies.com", description: "Movies / Series Stream" },
-        { name: "FMovies", url: "https://fmovies.wtf/", description: "Movies / Series Stream" }
+        { name: "FMovies", url: "https://fmovies.wtf/", description: "Movies / Series Stream" },
+        { name: "Pirate Bay", url: "https://thepiratebay.org", description: "Torrent Tracker" },
+        { name: "RARBG", url: "https://rargb.to", description: "Torrent Tracker" },
+        { name: "YTS", url: "https://yts.mx", description: "Movies/ Series Torrent Tracker" }
     ]},
     { "Files": [
         { name: "Authority", url: "https://raw.githubusercontent.com/luis-caldas/mypub/master/ssl/ca.pem", description: "My certificate authority" }
