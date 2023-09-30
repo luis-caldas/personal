@@ -106,22 +106,23 @@ div.search-box-wrap {
 }
 
 input#search-box {
-  color: inherit;
-  box-sizing: border-box;
-  margin: 0;
-  font: inherit;
   display: flex;
   flex-grow: 1;
-  height: 100%;
+  margin: 0;
   padding-left: 1rem;
   padding-right: 0;
+  height: 100%;
+  background: none;
+  box-sizing: border-box;
+  border-radius: 8px;
   border: none;
   outline: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  background: none;
-  border-radius: 8px;
+  color: inherit;
+  caret-color: #888;
+  caret-shape: block;
 }
 ::placeholder {
   color: #979797;
@@ -129,14 +130,14 @@ input#search-box {
 }
 
 div.search-icon-box {
-  line-height: 1.5;
-  color: inherit;
-  text-align: center;
-  box-sizing: border-box;
-  margin: 0;
-  max-inline-size: none;
   display: inline-flex;
   height: 100%;
+  margin: 0;
+  color: inherit;
+  line-height: 1.5;
+  text-align: center;
+  box-sizing: border-box;
+  max-inline-size: none;
 }
 
 button.search-button {
