@@ -22,7 +22,7 @@
  * Base structure
  */
 
- @font-face {
+@font-face {
   font-family: "Iosevka Term Slab";
   src: url('/assets/fonts/iosevka-term-slab-regular.woff2') format('woff2'),
        url('/assets/fonts/iosevka-term-slab-regular.ttf')  format('truetype');
@@ -51,6 +51,125 @@ body {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+}
+
+/*
+ * Search option
+ */
+
+div#show-arrow {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.1rem;
+}
+
+svg#arrow {
+  height: 4rem;
+  width: 6rem;
+}
+
+div#search {
+  display: flex;
+  height: 100vh;
+}
+
+form#search-form {
+  position: relative;
+  width: 60rem;
+  max-width: 85vw;
+  height: 3.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #111;
+  color: rgb(216, 216, 216);
+  margin: 40vh auto auto;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+  border: 3px solid #222;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px #0c0c0c;
+}
+
+div.search-box-wrap {
+  color: inherit;
+  margin: 0;
+  box-sizing: border-box;
+  max-inline-size: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: none;
+  border-radius: 8px;
+  height: 100%;
+  overflow: visible;
+}
+
+input#search-box {
+  color: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  font: inherit;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 0;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: none;
+  border-radius: 8px;
+}
+::placeholder {
+  color: #979797;
+  opacity: 1;
+}
+
+div.search-icon-box {
+  line-height: 1.5;
+  color: inherit;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  max-inline-size: none;
+  display: inline-flex;
+  height: 100%;
+}
+
+button.search-button {
+  box-sizing: border-box;
+  font: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 4rem;
+  background: transparent;
+  opacity: .56;
+  border: none;
+  position: relative;
+  height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: inherit;
+}
+
+svg#search-icon {
+  font: inherit;
+  cursor: pointer;
+  -webkit-font-smoothing: subpixel-antialiased;
+  fill: none;
+  box-sizing: border-box;
+  margin: 0;
+  display: block;
+  max-width: 100%;
+  color: currentColor;
+  height: 18px;
+  width: 18px;
 }
 
 /*
