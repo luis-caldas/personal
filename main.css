@@ -7,7 +7,7 @@
 .btn-secondary:focus {
   color: #333;
   background-color: #fff !important;
-  border-color: #ddd !important;
+  border-color: #fff !important;
   border-width: 0.2rem;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
@@ -26,6 +26,11 @@
   font-family: "Iosevka Term Slab";
   src: url('/assets/fonts/iosevka-term-slab-regular.woff2') format('woff2'),
        url('/assets/fonts/iosevka-term-slab-regular.ttf')  format('truetype');
+}
+
+::selection {
+  color: #fff;
+  background: #222;
 }
 
 body {
@@ -86,7 +91,7 @@ form#search-form {
   padding: 0;
   text-align: center;
   box-sizing: border-box;
-  border: 3px solid #ddd;
+  border: 3px solid #fff;
   border-radius: 8px;
   box-shadow: 4px 4px 10px #0c0c0c;
 }
@@ -123,9 +128,12 @@ input#search-box {
   color: inherit;
   caret-color: #aaa;
   caret-shape: block;
+  font-weight: 700!important;
 }
 ::placeholder {
   color: #666;
+  text-transform: uppercase;
+  font-weight: 700!important;
   opacity: 1;
 }
 
@@ -169,8 +177,13 @@ svg#search-icon {
   display: block;
   max-width: 100%;
   color: currentColor;
-  height: 18px;
-  width: 18px;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+svg#search-icon path {
+  stroke: currentColor;
+  stroke-width: 0.05rem;
 }
 
 /*
