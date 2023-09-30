@@ -6,8 +6,8 @@
 .btn-secondary,
 .btn-secondary:focus {
   color: #333;
-  background-color: rgb(255, 255, 255)!important;
-  border-color: rgb(255, 255, 255)!important;
+  background-color: #fff !important;
+  border-color: #ddd !important;
   border-width: 0.2rem;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
@@ -80,13 +80,13 @@ form#search-form {
   height: 3.5rem;
   font-size: 1rem;
   line-height: 1.5;
-  background-color: #111;
-  color: rgb(216, 216, 216);
+  background-color: #fff;
+  color: #333;
   margin: 40vh auto auto;
   padding: 0;
   text-align: center;
   box-sizing: border-box;
-  border: 3px solid #222;
+  border: 3px solid #ddd;
   border-radius: 8px;
   box-shadow: 4px 4px 10px #0c0c0c;
 }
@@ -121,11 +121,11 @@ input#search-box {
   overflow: hidden;
   text-overflow: ellipsis;
   color: inherit;
-  caret-color: #888;
+  caret-color: #aaa;
   caret-shape: block;
 }
 ::placeholder {
-  color: #979797;
+  color: #666;
   opacity: 1;
 }
 
