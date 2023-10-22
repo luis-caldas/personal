@@ -29,7 +29,8 @@ const bottomInfo = [
         { name: "Flashing", url: "https://morse.my.to", description: "Flashing training website" }
     ]},
     { "Dev": [
-        { name: "DevDocs", url: "https://devdocs.io", description: "Documentation for most programming languages" }
+        { name: "DevDocs", url: "https://devdocs.io", description: "Documentation for most programming languages" },
+        { name: "Carbon", url: "https://carbon.now.sh", description: "Website for creating screenshots of code" }
     ]},
     { "SpeedTest": [
         { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
@@ -46,6 +47,7 @@ const bottomInfo = [
     ]},
     { "Media": [
         { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
+        { name: "Chiptune", url: "http://79.120.11.40:8000/chiptune.ogg", description: "Chiptune Radio" },
         { name: "9Anime", url: "https://9anime.gs/home", description: "Anime Stream" },
         { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
         { name: "DopeBox", url: "https://dopebox.to", description:"Movies / Series Stream" },
