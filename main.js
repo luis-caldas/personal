@@ -30,6 +30,8 @@ const bottomInfo = [
     ]},
     { "Dev": [
         { name: "DevDocs", url: "https://devdocs.io", description: "Documentation for most programming languages" },
+        { name: "BinVis", url: "https://binvis.io/", description: "Binary files visualiser" },
+        { name: "HexEdit", url: "https://hexed.it/", description: "Online hex editor" },
         { name: "Carbon", url: "https://carbon.now.sh", description: "Website for creating screenshots of code" }
     ]},
     { "SpeedTest": [
