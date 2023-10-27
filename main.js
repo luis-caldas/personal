@@ -30,14 +30,16 @@ const bottomInfo = [
     ]},
     { "Dev": [
         { name: "DevDocs", url: "https://devdocs.io", description: "Documentation for most programming languages" },
-        { name: "BinVis", url: "https://binvis.io/", description: "Binary files visualiser" },
-        { name: "HexEdit", url: "https://hexed.it/", description: "Online hex editor" },
-        { name: "Carbon", url: "https://carbon.now.sh", description: "Website for creating screenshots of code" }
+        { name: "Carbon", url: "https://carbon.now.sh", description: "Website for creating screenshots of code" },
+        { name: "BinVis", url: "https://binvis.io", description: "Binary files visualiser" },
+        { name: "HexEdit", url: "https://hexed.it", description: "Online hex editor" },
+        { name: "STRFTIME", url: "https://strftime.net", description: "STRFTIME syntax website" },
+        { name: "Crontab", url: "https://crontab.guru", description: "Crontab syntax websute" }
     ]},
     { "SpeedTest": [
         { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
         { name: "Speedtest", url: "https://www.speedtest.net", description: "Internet Speed Test" },
-        { name: "Eir", url: "https://www.eir.ie/helpandsupport/broadbandspeedtest/", description: "Internet Speed Test" }
+        { name: "Eir", url: "https://www.eir.ie/helpandsupport/broadbandspeedtest", description: "Internet Speed Test" }
     ]},
     { "Flight": [
         { name: "Airspace", url: "https://airspace.flyryte.com", description: "IAA Map" },
@@ -54,7 +56,7 @@ const bottomInfo = [
         { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
         { name: "DopeBox", url: "https://dopebox.to", description:"Movies / Series Stream" },
         { name: "123Movies", url: "https://0123movies.com", description: "Movies / Series Stream" },
-        { name: "FMovies", url: "https://fmovies.wtf/", description: "Movies / Series Stream" },
+        { name: "FMovies", url: "https://fmovies.wtf", description: "Movies / Series Stream" },
         { name: "Pirate Bay", url: "https://thepiratebay.org", description: "Torrent Tracker" },
         { name: "RARBG", url: "https://rargb.to", description: "Torrent Tracker" },
         { name: "YTS", url: "https://yts.mx", description: "Movies/ Series Torrent Tracker" }
