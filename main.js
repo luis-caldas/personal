@@ -46,17 +46,18 @@ const bottomInfo = [
         { name: "ADS-B", url: "https://globe.adsbexchange.com/?SiteLat=51.8491&SiteLon=-8.4899&centerReceiver&zoom=8&enableLabels&extendedLabels=2&noVanish&hideSideBar&rangeRings=0&altitudeChart=1", description: "ADS-B Exchange" },
         { name: "FlightRadar", url: "https://www.flightradar24.com", description: "Flight Radar" },
         { name: "METAR", url: "https://metar-taf.com", description: "METAR & TAFs" },
-        { name: "NOTAMS", url: "https://www.iaa.ie/air-traffic-management/notam", description: "IAA NOTAMS" },
+        { name: "NOTAMs", url: "https://www.airnav.ie/air-traffic-management/notam-notice-to-airmen", description: "NOTAMs" },
         { name: "Windy", url: "https://www.windy.com", description: "Weather Map" }
     ]},
     { "Media": [
         { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
         { name: "Chiptune", url: "http://79.120.11.40:8000/chiptune.ogg", description: "Chiptune Radio" },
-        { name: "9Anime", url: "https://9anime.gs/home", description: "Anime Stream" },
+        { name: "Roms", url: "https://r-roms.github.io", description: "Roms Center" },
+        { name: "9Anime", url: "https://aniwave.to/home", description: "Anime Stream" },
         { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
         { name: "DopeBox", url: "https://dopebox.to", description:"Movies / Series Stream" },
         { name: "123Movies", url: "https://0123movies.com", description: "Movies / Series Stream" },
-        { name: "FMovies", url: "https://fmovies.wtf", description: "Movies / Series Stream" },
+        { name: "FMovies", url: "https://fmoviesz.to", description: "Movies / Series Stream" },
         { name: "Pirate Bay", url: "https://thepiratebay.org", description: "Torrent Tracker" },
         { name: "RARBG", url: "https://rargb.to", description: "Torrent Tracker" },
         { name: "YTS", url: "https://yts.mx", description: "Movies/ Series Torrent Tracker" }
