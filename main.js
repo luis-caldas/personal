@@ -28,13 +28,14 @@ const bottomInfo = [
         { name: "Github", url: "https://github.com/luis-caldas", description: "Personal Github" },
         { name: "Flashing", url: "https://morse.my.to", description: "Flashing training website" }
     ]},
-    { "Dev": [
+    { "Tech": [
         { name: "DevDocs", url: "https://devdocs.io", description: "Documentation for most programming languages" },
         { name: "Carbon", url: "https://carbon.now.sh", description: "Website for creating screenshots of code" },
         { name: "BinVis", url: "https://binvis.io", description: "Binary files visualiser" },
         { name: "HexEdit", url: "https://hexed.it", description: "Online hex editor" },
         { name: "STRFTIME", url: "https://strftime.net", description: "STRFTIME syntax website" },
-        { name: "Crontab", url: "https://crontab.guru", description: "Crontab syntax websute" }
+        { name: "Crontab", url: "https://crontab.guru", description: "Crontab syntax website" },
+        { name: "Time", url: "https://time.is", description: "Time website" }
     ]},
     { "SpeedTest": [
         { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
@@ -47,7 +48,8 @@ const bottomInfo = [
         { name: "FlightRadar", url: "https://www.flightradar24.com", description: "Flight Radar" },
         { name: "METAR", url: "https://metar-taf.com", description: "METAR & TAFs" },
         { name: "NOTAMs", url: "https://www.airnav.ie/air-traffic-management/notam-notice-to-airmen", description: "NOTAMs" },
-        { name: "Windy", url: "https://www.windy.com", description: "Weather Map" }
+        { name: "Windy", url: "https://www.windy.com", description: "Weather Map" },
+        { name: "Tide", url: "https://www.tide-forecast.com/locations/Cork/tides/latest", description: "Tide Information" }
     ]},
     { "Media": [
         { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
