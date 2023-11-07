@@ -29,13 +29,14 @@ const bottomInfo = [
         { name: "Flashing", url: "https://morse.my.to", description: "Flashing training website" }
     ]},
     { "Tech": [
-        { name: "DevDocs", url: "https://devdocs.io", description: "Documentation for most programming languages" },
-        { name: "Carbon", url: "https://carbon.now.sh", description: "Website for creating screenshots of code" },
-        { name: "BinVis", url: "https://binvis.io", description: "Binary files visualiser" },
-        { name: "HexEdit", url: "https://hexed.it", description: "Online hex editor" },
-        { name: "STRFTIME", url: "https://strftime.net", description: "STRFTIME syntax website" },
-        { name: "Crontab", url: "https://crontab.guru", description: "Crontab syntax website" },
-        { name: "Time", url: "https://time.is", description: "Time website" }
+        { name: "DevDocs", url: "https://devdocs.io", description: "Programming Documentation" },
+        { name: "Carbon", url: "https://carbon.now.sh", description: "Create Code Screenshots" },
+        { name: "BinVis", url: "https://binvis.io", description: "Binary Visualiser" },
+        { name: "HexEdit", url: "https://hexed.it", description: "Hexadecimal Editor" },
+        { name: "STRFTIME", url: "https://strftime.net", description: "STRFTIME Syntax" },
+        { name: "Crontab", url: "https://crontab.guru", description: "Crontab Syntax" },
+        { name: "Time", url: "https://time.is", description: "Accurate Time" },
+        { name: "MonkeyType", url: "https://monkeytype.com", description: "Typing Speed Test" }
     ]},
     { "SpeedTest": [
         { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
