@@ -23,9 +23,8 @@
  */
 
 @font-face {
-  font-family: "Iosevka Term Slab";
-  src: url('/assets/fonts/iosevka-term-slab-regular.woff2') format('woff2'),
-       url('/assets/fonts/iosevka-term-slab-regular.ttf')  format('truetype');
+  font-family: "Courier Prime";
+  src: url('/assets/fonts/courier-prime.ttf')  format('truetype');
 }
 
 ::selection {
@@ -41,7 +40,7 @@ body {
           rgba(0, 0, 0, 0.7)
         ), url("/assets/media/main.png");
   background-repeat: repeat;
-  font-family: "Iosevka Term Slab", monospace;
+  font-family: "Courier Prime", monospace;
 }
 
 .bd-placeholder-img {
