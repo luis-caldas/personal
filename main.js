@@ -29,6 +29,7 @@ const bottomInfo = [
         { name: "Flashing", url: "https://morse.my.to", description: "Flashing training website" }
     ]},
     { "Tech": [
+        { name: "Firmware", url: "https://fwupd.org", description: "Linux Firmwares" },
         { name: "DevDocs", url: "https://devdocs.io", description: "Programming Documentation" },
         { name: "Carbon", url: "https://carbon.now.sh", description: "Create Code Screenshots" },
         { name: "BinVis", url: "https://binvis.io", description: "Binary Visualiser" },
