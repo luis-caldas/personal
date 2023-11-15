@@ -29,7 +29,8 @@ const bottomInfo = [
         { name: "Flashing", url: "https://morse.my.to", description: "Flashing training website" }
     ]},
     { "Tech": [
-        { name: "Firmware", url: "https://fwupd.org", description: "Linux Firmwares" },
+	{ name: "Firmware", url: "https://fwupd.org", description: "Linux Firmwares" },
+        { name: "Circuit", url: "https://www.falstad.com/circuit/circuitjs.html", description: "Electronic Circuits Simulator" },
         { name: "DevDocs", url: "https://devdocs.io", description: "Programming Documentation" },
         { name: "Carbon", url: "https://carbon.now.sh", description: "Create Code Screenshots" },
         { name: "BinVis", url: "https://binvis.io", description: "Binary Visualiser" },
@@ -37,7 +38,8 @@ const bottomInfo = [
         { name: "STRFTIME", url: "https://strftime.net", description: "STRFTIME Syntax" },
         { name: "Crontab", url: "https://crontab.guru", description: "Crontab Syntax" },
         { name: "Time", url: "https://time.is", description: "Accurate Time" },
-        { name: "MonkeyType", url: "https://monkeytype.com", description: "Typing Speed Test" }
+        { name: "MonkeyType", url: "https://monkeytype.com", description: "Typing Speed Test" },
+        { name: "Switches", url: "https://switches.mx/switches", description: "Database of Mechanical Keyboard Switches" }
     ]},
     { "SpeedTest": [
         { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
