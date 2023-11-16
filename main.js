@@ -39,7 +39,9 @@ const bottomInfo = [
         { name: "Crontab", url: "https://crontab.guru", description: "Crontab Syntax" },
         { name: "Time", url: "https://time.is", description: "Accurate Time" },
         { name: "MonkeyType", url: "https://monkeytype.com", description: "Typing Speed Test" },
-        { name: "Switches", url: "https://switches.mx/switches", description: "Database of Mechanical Keyboard Switches" }
+        { name: "Switches", url: "https://switches.mx/switches", description: "Database of Mechanical Keyboard Switches" },
+        { name: "VIA", url: "https://usevia.app", description: "VIA Online Configurator" },
+        { name: "QMK", url: "https://config.qmk.fm", description: "QMK Online Configurator" }
     ]},
     { "SpeedTest": [
         { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
