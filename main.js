@@ -35,6 +35,7 @@ const bottomInfo = [
         { name: "Carbon", url: "https://carbon.now.sh", description: "Create Code Screenshots" },
         { name: "BinVis", url: "https://binvis.io", description: "Binary Visualiser" },
         { name: "HexEdit", url: "https://hexed.it", description: "Hexadecimal Editor" },
+        { name: "VIM", url: "https://vim.rtorr.com", description: "VIM Cheat Sheet" },
         { name: "STRFTIME", url: "https://strftime.net", description: "STRFTIME Syntax" },
         { name: "Crontab", url: "https://crontab.guru", description: "Crontab Syntax" },
         { name: "Time", url: "https://time.is", description: "Accurate Time" },
