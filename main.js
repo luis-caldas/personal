@@ -44,6 +44,9 @@ const bottomInfo = [
         { name: "VIA", url: "https://usevia.app", description: "VIA Online Configurator" },
         { name: "QMK", url: "https://config.qmk.fm", description: "QMK Online Configurator" }
     ]},
+    { "Finance": [
+        { name: "FinViz", url: "https://finviz.com/map.ashx", description: "Finance Visualiser" }
+    ]},
     { "SpeedTest": [
         { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
         { name: "Speedtest", url: "https://www.speedtest.net", description: "Internet Speed Test" },
