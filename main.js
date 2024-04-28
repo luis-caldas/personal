@@ -11,7 +11,7 @@ const sizeClassName = "widest";
 const mergeSections = true;
 
 // File and configuration
-const othersFile = "other.json";
+const othersFile = "more/other.json";
 const topInfo = [
     { "Main": [
         { name: "Email", url: "https://wednesday.mxrouting.net/webmail", description: "Email website" },
