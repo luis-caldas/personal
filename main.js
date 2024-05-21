@@ -39,6 +39,7 @@ const bottomInfo = [
         { name: "STRFTIME", url: "https://strftime.net", description: "STRFTIME Syntax" },
         { name: "Crontab", url: "https://crontab.guru", description: "Crontab Syntax" },
         { name: "Time", url: "https://time.is", description: "Accurate Time" },
+        { name: "Wormhole", url: "https://webwormhole.io", description: "Magic Wormhole File Transfer" },
         { name: "MonkeyType", url: "https://monkeytype.com", description: "Typing Speed Test" },
         { name: "Switches", url: "https://switches.mx/switches", description: "Database of Mechanical Keyboard Switches" },
         { name: "VIA", url: "https://usevia.app", description: "VIA Online Configurator" },
