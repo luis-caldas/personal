@@ -57,6 +57,7 @@ const bottomInfo = [
         { name: "Airspace", url: "https://airspace.flyryte.com", description: "IAA Map" },
         { name: "ADS-B", url: "https://globe.adsbexchange.com/?SiteLat=51.8491&SiteLon=-8.4899&centerReceiver&zoom=8&enableLabels&extendedLabels=2&noVanish&hideSideBar&rangeRings=0&altitudeChart=1", description: "ADS-B Exchange" },
         { name: "FlightRadar", url: "https://www.flightradar24.com", description: "Flight Radar" },
+        { name: "LiveATC", url: "https://www.liveatc.net/search/?icao=eick", description: "Live ATC Radio" },
         { name: "METAR", url: "https://metar-taf.com", description: "METAR & TAFs" },
         { name: "NOTAMs", url: "https://www.airnav.ie/air-traffic-management/notam-notice-to-airmen", description: "NOTAMs" },
         { name: "Windy", url: "https://www.windy.com", description: "Weather Map" },
