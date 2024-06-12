@@ -70,7 +70,6 @@ const bottomInfo = [
         { name: "9Anime", url: "https://aniwave.to/home", description: "Anime Stream" },
         { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
         { name: "DopeBox", url: "https://dopebox.to", description:"Movies / Series Stream" },
-        { name: "123Movies", url: "https://0123movies.com", description: "Movies / Series Stream" },
         { name: "FMovies", url: "https://fmoviesz.to", description: "Movies / Series Stream" },
         { name: "Pirate Bay", url: "https://thepiratebay.org", description: "Torrent Tracker" },
         { name: "RARBG", url: "https://rargb.to", description: "Torrent Tracker" },
