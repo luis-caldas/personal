@@ -67,10 +67,9 @@ const bottomInfo = [
         { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
         { name: "Chiptune", url: "http://79.120.11.40:8000/chiptune.ogg", description: "Chiptune Radio" },
         { name: "Roms", url: "https://r-roms.github.io", description: "Roms Center" },
-        { name: "9Anime", url: "https://aniwave.to/home", description: "Anime Stream" },
+        { name: "9Anime", url: "https://9anime.se/home", description: "Anime Stream" },
         { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
-        { name: "DopeBox", url: "https://dopebox.to", description:"Movies / Series Stream" },
-        { name: "FMovies", url: "https://fmoviesz.to", description: "Movies / Series Stream" },
+        { name: "Stream", url: "https://fmhy.net/videopiracyguide", description: "Movies / Series Stream Compilation" },
         { name: "Pirate Bay", url: "https://thepiratebay.org", description: "Torrent Tracker" },
         { name: "RARBG", url: "https://rargb.to", description: "Torrent Tracker" },
         { name: "YTS", url: "https://yts.mx", description: "Movies/ Series Torrent Tracker" }
