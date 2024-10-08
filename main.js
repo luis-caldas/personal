@@ -10,6 +10,9 @@ const sizeClassName = "widest";
 // Merge sections with the same names
 const mergeSections = true;
 
+// Search
+const searchAction = "https://duckduckgo.com"
+
 // File and configuration
 const othersFile = "more/other.json";
 const topInfo = [
@@ -80,6 +83,34 @@ const bottomInfo = [
 ];
 // Create the entire set
 const allInfo = topInfo.concat(bottomInfo);
+
+// Functions
+function checkURL(urlString) {
+    return /^[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/.test(urlString);
+}
+
+function submitForm(form, text) {
+
+    // Check if redirect or search
+    if (checkURL(text)) {
+
+        let fixedURL = text;
+
+        // Check if protocol is present
+        if (!/^https?:\/\//i.test(fixedURL))
+            fixedURL = 'https://' + fixedURL;
+
+        // Redirect
+        window.location.href = fixedURL;
+
+    } else {
+
+        // Set search provider and submit
+        form.action = searchAction;
+        form.submit();
+
+    }
+}
 
 // Main function when website loads
 function main(websitesData) {
@@ -234,6 +265,35 @@ $( document ).ready(function() {
         // Fix size if selected
         if (shouldFixSize)
             fixSize();
+    });
+
+    // Form Submission
+    $("form").each(function() {
+
+        // Event handler
+        let eventHandle = (event) => {
+            // Prevent default submission
+            event.preventDefault();
+            // Use custom submit
+            submitForm(this, $(this).find("input").val());
+            // Also prevent default
+            return false;
+        }
+
+        // Text input
+        $(this).find("input").keypress((event) => {
+            // If enter is pressed
+            if(event.which == 10 || event.which == 13) {
+                // Prevent default action
+                event.preventDefault();
+                // Event handler
+                return eventHandle(event);
+            }
+        });
+
+        // Submit button
+        $(this).find("button").click(eventHandle);
+
     });
 
 });
