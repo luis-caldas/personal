@@ -180,8 +180,7 @@ svg#search-icon {
   width: 1.5rem;
 }
 
-svg#search-icon path {
-  stroke: currentColor;
+svg#search-icon use {
   stroke-width: 0.05rem;
 }
 

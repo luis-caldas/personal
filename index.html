@@ -1,47 +1,51 @@
 <!doctype html>
 <html lang="en" class="h-100">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Personal website, with a few links">
-	<meta name="author" content="Caldas">
-	<meta name="theme-color" content="#343434">
-	<title>LINKS</title>
-	<!-- Bootstrap core CSS -->
-	<link href="./assets/lib/bootstrap.min.css" rel="stylesheet">
-	<!-- JQuery -->
-	<script type="text/javascript" src="./assets/lib/jquery-3.6.1.min.js"></script>
-	<!-- Favicons -->
-	<link rel="icon" href="./assets/images/main.png" type="image/png">
-	<!-- Custom styles and scripts -->
-	<link href="./assets/styles/main.css" rel="stylesheet">
-	<script type="text/javascript" src="./assets/scripts/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal website, with a few links">
+    <meta name="author" content="Caldas">
+    <meta name="theme-color" content="#343434">
+    <title>LINKS</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/lib/bootstrap.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="./assets/lib/jquery-3.6.1.min.js"></script>
+    <!-- Favicons -->
+    <link rel="icon" href="./assets/images/main.png" type="image/png">
+    <!-- Custom styles and scripts -->
+    <link href="./assets/styles/main.css" rel="stylesheet">
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
 </head>
 <body class="text-white bg-dark">
-	<div id="search">
-		<form id="search-form" method="GET">
-			<div class="search-box-wrap">
-				<input type="text" name="q" id="search-box" autocapitalize="none" autocorrect="off" autocomplete="off" placeholder="Search the web" minlength="1" value="" required autofocus>
-				<div class="search-icon-box">
-					<button class="search-button" type="submit">
-						<svg id="search-icon" fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-							<path fill="currentColor" fill-rule="evenodd" d="M6.875 1a5.875 5.875 0 103.689 10.448l3.37 3.369a.624.624 0 10.883-.884l-3.37-3.37A5.875 5.875 0 006.875 1zM2.25 6.875a4.625 4.625 0 119.25 0 4.625 4.625 0 01-9.25 0z" clip-rule="evenodd"></path>
-						</svg>
-					</button>
-				</div>
-			</div>
-		</form>
-		<div id="show-arrow">
-			<svg id="arrow" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 330" xml:space="preserve">
-				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-				<g id="SVGRepo_iconCarrier">
-				<path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></g>
-			</svg>
-		</div>
-	</div>
-	<div class="w-100 h-100 p-3 mx-auto" id="inserter">
-		<div>Please enable javascript to see the links</div>
-	</div>
+    <!-- Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="down-arrow" viewBox="0 0 330 330">
+            <path fill="currentColor" stroke="currentColor" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path><
+        </symbol>
+        <symbol id="search" viewBox="0 0 16 16">
+            <path fill="currentColor" stroke="currentColor" d="M6.875 1a5.875 5.875 0 103.689 10.448l3.37 3.369a.624.624 0 10.883-.884l-3.37-3.37A5.875 5.875 0 006.875 1zM2.25 6.875a4.625 4.625 0 119.25 0 4.625 4.625 0 01-9.25 0z"></path>
+        </symbol>
+    </svg>
+    <!-- Search -->
+    <div id="search">
+        <form id="search-form" method="GET">
+            <div class="search-box-wrap">
+                <input type="text" name="q" id="search-box" autocapitalize="none" autocorrect="off" autocomplete="off" placeholder="Search the web" minlength="1" value="" required autofocus>
+                <div class="search-icon-box">
+                    <button class="search-button" type="submit">
+                        <svg id="search-icon"><use href="#search"></use></svg>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div id="show-arrow">
+            <svg id="arrow"><use href="#down-arrow"></use></svg>
+        </div>
+    </div>
+    <!-- Links -->
+    <div class="w-100 h-100 p-3 mx-auto" id="inserter">
+        <div>Please enable javascript to see the links</div>
+    </div>
 </body>
 </html>
