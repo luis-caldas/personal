@@ -17,8 +17,8 @@ const searchAction = "https://duckduckgo.com"
 const othersFile = "more/other.json";
 const topInfo = [
     { "Main": [
-        { name: "Email", url: "https://wednesday.mxrouting.net/webmail", description: "Email website" },
-        { name: "Message", url: "https://app.schildi.chat/", description: "Messaging website" }
+        { name: "Email", url: "https://mail.caldas.ie", description: "Email website" },
+        { name: "Message", url: "https://app.schildi.chat", description: "Messaging website" }
     ]}
 ];
 const bottomInfo = [
