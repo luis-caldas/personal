@@ -46,7 +46,8 @@ const bottomInfo = [
         { name: "MonkeyType", url: "https://monkeytype.com", description: "Typing Speed Test" },
         { name: "Switches", url: "https://switches.mx/switches", description: "Database of Mechanical Keyboard Switches" },
         { name: "VIA", url: "https://usevia.app", description: "VIA Online Configurator" },
-        { name: "QMK", url: "https://config.qmk.fm", description: "QMK Online Configurator" }
+        { name: "QMK", url: "https://config.qmk.fm", description: "QMK Online Configurator" },
+        { name: "Strudel", url: "https://strudel.cc", description: "Music Coding REPL" }
     ]},
     { "Finance": [
         { name: "FinViz", url: "https://finviz.com/map.ashx", description: "Finance Visualiser" }
