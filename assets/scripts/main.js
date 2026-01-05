@@ -58,6 +58,7 @@ const bottomInfo = [
         { name: "Eir", url: "https://www.eir.ie/helpandsupport/broadbandspeedtest", description: "Internet Speed Test" }
     ]},
     { "Flight": [
+        { name: "EFIS Editor", url: "https://rdamazio.github.io/efis-editor", description: "EFIS Editor" },
         { name: "Airspace", url: "https://airspace.flyryte.com", description: "IAA Map" },
         { name: "ADS-B", url: "https://adsb.caldas.ie/?airport=EICK&centerReceiver&zoom=8&enableLabels&extendedLabels=2&noVanish&hideSideBar&rangeRings=0&altitudeChart=1&tempTrails=%3C120%3E&mapDim=0.6", description: "ADS-B Exchange" },
         { name: "AirLoom", url: "https://objectiveunclear.com/airloom.html?airport=ORK", description: "AirLoom 3D ADS-B Viewer" },
