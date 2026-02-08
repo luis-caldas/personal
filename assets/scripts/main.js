@@ -25,14 +25,13 @@ const bottomInfo = [
     { "NixOS": [
         { name: "Packages", url: "https://search.nixos.org/packages", description: "NixOS Search Packages" },
         { name: "Options", url: "https://search.nixos.org/options", description: "NixOS Search Options" },
-        { name: "Home Manager", url: "https://mipmip.github.io/home-manager-option-search", description: "Home Manager Options for NixOS" }
+        { name: "Home Manager", url: "https://nix-community.github.io/home-manager/options.xhtml", description: "Home Manager Options for NixOS" }
     ]},
     { "More": [
-        { name: "Github", url: "https://github.com/luis-caldas", description: "Personal Github" },
-        { name: "Flashing", url: "https://morse.my.to", description: "Flashing training website" }
+        { name: "Github", url: "https://github.com/luis-caldas", description: "Personal Github" }
     ]},
     { "Tech": [
-	{ name: "Firmware", url: "https://fwupd.org", description: "Linux Firmwares" },
+        { name: "Firmware", url: "https://fwupd.org", description: "Linux Firmwares" },
         { name: "Circuit", url: "https://www.falstad.com/circuit/circuitjs.html", description: "Electronic Circuits Simulator" },
         { name: "DevDocs", url: "https://devdocs.io", description: "Programming Documentation" },
         { name: "Carbon", url: "https://carbon.now.sh", description: "Create Code Screenshots" },
@@ -44,7 +43,6 @@ const bottomInfo = [
         { name: "Time", url: "https://time.is", description: "Accurate Time" },
         { name: "Wormhole", url: "https://webwormhole.io", description: "Magic Wormhole File Transfer" },
         { name: "MonkeyType", url: "https://monkeytype.com", description: "Typing Speed Test" },
-        { name: "Switches", url: "https://switches.mx/switches", description: "Database of Mechanical Keyboard Switches" },
         { name: "VIA", url: "https://usevia.app", description: "VIA Online Configurator" },
         { name: "QMK", url: "https://config.qmk.fm", description: "QMK Online Configurator" },
         { name: "Strudel", url: "https://strudel.cc", description: "Music Coding REPL" }
@@ -59,26 +57,21 @@ const bottomInfo = [
     ]},
     { "Flight": [
         { name: "EFIS Editor", url: "https://rdamazio.github.io/efis-editor", description: "EFIS Editor" },
-        { name: "Airspace", url: "https://airspace.flyryte.com", description: "IAA Map" },
         { name: "ADS-B", url: "https://adsb.caldas.ie/?airport=EICK&centerReceiver&zoom=8&enableLabels&extendedLabels=2&noVanish&hideSideBar&rangeRings=0&altitudeChart=1&tempTrails=%3C120%3E&mapDim=0.6", description: "ADS-B Exchange" },
         { name: "AirLoom", url: "https://objectiveunclear.com/airloom.html?airport=ORK", description: "AirLoom 3D ADS-B Viewer" },
         { name: "FlightRadar", url: "https://www.flightradar24.com", description: "Flight Radar" },
         { name: "LiveATC", url: "https://www.liveatc.net/search/?icao=eick", description: "Live ATC Radio" },
         { name: "METAR", url: "https://metar-taf.com", description: "METAR & TAFs" },
-        { name: "NOTAMs", url: "https://www.airnav.ie/air-traffic-management/notam-notice-to-airmen", description: "NOTAMs" },
+        { name: "NOTAM", url: "https://notaminfo.com/irelandmap", description: "NOTAM Info Map" },
         { name: "Windy", url: "https://www.windy.com", description: "Weather Map" },
         { name: "Tide", url: "https://www.tide-forecast.com/locations/Cork/tides/latest", description: "Tide Information" }
     ]},
     { "Media": [
         { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
-        { name: "Chiptune", url: "http://79.120.11.40:8000/chiptune.ogg", description: "Chiptune Radio" },
         { name: "Roms", url: "https://r-roms.github.io", description: "Roms Center" },
-        { name: "9Anime", url: "https://9anime.se/home", description: "Anime Stream" },
         { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
         { name: "Stream", url: "https://fmhy.net/videopiracyguide", description: "Movies / Series Stream Compilation" },
-        { name: "Pirate Bay", url: "https://thepiratebay.org", description: "Torrent Tracker" },
-        { name: "RARBG", url: "https://rargb.to", description: "Torrent Tracker" },
-        { name: "YTS", url: "https://yts.mx", description: "Movies/ Series Torrent Tracker" }
+        { name: "RARBG", url: "https://rargb.to", description: "Torrent Tracker" }
     ]},
     { "Files": [
         { name: "Authority", url: "https://raw.githubusercontent.com/luis-caldas/mypub/master/ssl/ca.pem", description: "My certificate authority" }
