@@ -33,6 +33,7 @@ const bottomInfo = [
     { "Tech": [
         { name: "Firmware", url: "https://fwupd.org", description: "Linux Firmwares" },
         { name: "Circuit", url: "https://www.falstad.com/circuit/circuitjs.html", description: "Electronic Circuits Simulator" },
+        { name: "ArrayBox", url: "https://arraybox.dev", description: "Programming Array Languages" },
         { name: "DevDocs", url: "https://devdocs.io", description: "Programming Documentation" },
         { name: "Carbon", url: "https://carbon.now.sh", description: "Create Code Screenshots" },
         { name: "BinVis", url: "https://binvis.io", description: "Binary Visualiser" },
