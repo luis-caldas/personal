@@ -57,13 +57,14 @@ const bottomInfo = [
         { name: "Eir", url: "https://www.eir.ie/helpandsupport/broadbandspeedtest", description: "Internet Speed Test" }
     ]},
     { "Flight": [
-        { name: "EFIS Editor", url: "https://rdamazio.github.io/efis-editor", description: "EFIS Editor" },
+        { name: "AirSpace", url: "https://iaa-ie.maps.arcgis.com/apps/instant/basic/index.html?appid=0772db05b2bb488686d3678d8144ae66", description: "Air Space Map" },
+        { name: "NOTAM", url: "https://notaminfo.com/irelandmap", description: "NOTAM Info Map" },
+        { name: "EFIS", url: "https://rdamazio.github.io/efis-editor", description: "EFIS Editor" },
         { name: "ADS-B", url: "https://adsb.caldas.ie/?airport=EICK&centerReceiver&zoom=8&enableLabels&extendedLabels=2&noVanish&hideSideBar&rangeRings=0&altitudeChart=1&tempTrails=%3C120%3E&mapDim=0.6", description: "ADS-B Exchange" },
         { name: "AirLoom", url: "https://objectiveunclear.com/airloom.html?airport=ORK", description: "AirLoom 3D ADS-B Viewer" },
         { name: "FlightRadar", url: "https://www.flightradar24.com", description: "Flight Radar" },
         { name: "LiveATC", url: "https://www.liveatc.net/search/?icao=eick", description: "Live ATC Radio" },
         { name: "METAR", url: "https://metar-taf.com", description: "METAR & TAFs" },
-        { name: "NOTAM", url: "https://notaminfo.com/irelandmap", description: "NOTAM Info Map" },
         { name: "Windy", url: "https://www.windy.com", description: "Weather Map" },
         { name: "Tide", url: "https://www.tide-forecast.com/locations/Cork/tides/latest", description: "Tide Information" }
     ]},
