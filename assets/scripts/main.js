@@ -31,6 +31,7 @@ const bottomInfo = [
         { name: "Github", url: "https://github.com/luis-caldas", description: "Personal Github" }
     ]},
     { "Tech": [
+        { name: "Massgrave", url: "https://massgrave.dev", description: "Windows Activation Files" },
         { name: "Firmware", url: "https://fwupd.org", description: "Linux Firmwares" },
         { name: "Circuit", url: "https://www.falstad.com/circuit/circuitjs.html", description: "Electronic Circuits Simulator" },
         { name: "ArrayBox", url: "https://arraybox.dev", description: "Programming Array Languages" },
