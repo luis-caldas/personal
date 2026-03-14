@@ -125,7 +125,7 @@ input#search-box {
   overflow: hidden;
   text-overflow: ellipsis;
   color: inherit;
-  caret-color: #aaa;
+  caret-color: #0000007F;
   caret-shape: block;
   font-weight: 700!important;
 }
