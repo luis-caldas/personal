@@ -17,8 +17,8 @@ const searchAction = "https://duckduckgo.com"
 const othersFile = "more/other.json";
 const topInfo = [
     { "Main": [
-        { name: "Email", url: "https://mail.caldas.ie", description: "Email website" },
-        { name: "Message", url: "https://app.schildi.chat", description: "Messaging website" }
+        { name: "Email", url: "https://mail.caldas.ie", description: "Email Website" },
+        { name: "Message", url: "https://app.schildi.chat", description: "Messaging Website" }
     ]}
 ];
 const bottomInfo = [
@@ -30,54 +30,81 @@ const bottomInfo = [
     { "More": [
         { name: "Github", url: "https://github.com/luis-caldas", description: "Personal Github" }
     ]},
-    { "Tech": [
-        { name: "Massgrave", url: "https://massgrave.dev", description: "Windows Activation Files" },
-        { name: "Firmware", url: "https://fwupd.org", description: "Linux Firmwares" },
-        { name: "Circuit", url: "https://www.falstad.com/circuit/circuitjs.html", description: "Electronic Circuits Simulator" },
-        { name: "ArrayBox", url: "https://arraybox.dev", description: "Programming Array Languages" },
-        { name: "DevDocs", url: "https://devdocs.io", description: "Programming Documentation" },
-        { name: "Carbon", url: "https://carbon.now.sh", description: "Create Code Screenshots" },
-        { name: "BinVis", url: "https://binvis.io", description: "Binary Visualiser" },
-        { name: "HexEdit", url: "https://hexed.it", description: "Hexadecimal Editor" },
+    { "Dev": [
+        { name: "BinVis", url: "https://binvis.io", description: "Binary File Visualiser" },
+        { name: "HexEdit", url: "https://hexed.it", description: "Hex Editor" },
+        { name: "DevDocs", url: "https://devdocs.io", description: "Programming Documentation Compilation" },
+        { name: "Bash", url: "https://www.gnu.org/software/bash/manual/html_node/Pattern-Matching.html#Pattern-Matching", description: "Bash Pattern Matching" },
+        { name: "MIMEs", url: "https://www.iana.org/assignments/media-types/media-types.xhtml", description: "IANA Media Types" },
+        { name: "Wireshark", url: "https://www.wireshark.org/docs/dfref/", description: "Wireshark Display Filters" },
         { name: "VIM", url: "https://vim.rtorr.com", description: "VIM Cheat Sheet" },
-        { name: "STRFTIME", url: "https://strftime.net", description: "STRFTIME Syntax" },
-        { name: "Crontab", url: "https://crontab.guru", description: "Crontab Syntax" },
+        { name: "Crontab", url: "https://crontab.guru", description: "Crontab Builder" },
+        { name: "STRFTIME", url: "https://strftime.net", description: "STRFTIME Builder" },
+        { name: "Carbon", url: "https://carbon.now.sh", description: "Code Screenshots" },
+        { name: "ArrayBox", url: "https://arraybox.dev", description: "Array Language Playground" },
         { name: "Time", url: "https://time.is", description: "Accurate Time" },
-        { name: "Wormhole", url: "https://webwormhole.io", description: "Magic Wormhole File Transfer" },
-        { name: "MonkeyType", url: "https://monkeytype.com", description: "Typing Speed Test" },
-        { name: "VIA", url: "https://usevia.app", description: "VIA Online Configurator" },
-        { name: "QMK", url: "https://config.qmk.fm", description: "QMK Online Configurator" },
-        { name: "Strudel", url: "https://strudel.cc", description: "Music Coding REPL" }
+        { name: "Wormhole", url: "https://webwormhole.io", description: "Simple File Transfer" },
+        { name: "MonkeyType", url: "https://monkeytype.com", description: "Typing Speed Text" },
     ]},
-    { "Finance": [
-        { name: "FinViz", url: "https://finviz.com/map.ashx", description: "Finance Visualiser" }
+    { "Hardware": [
+        { name: "Circuit", url: "https://www.falstad.com/circuit/circuitjs.html", description: "Electronic Circuit Simlator" },
+        { name: "Firmware", url: "https://fwupd.org", description: "Linux Firmwares" },
+        { name: "OpenWrt", url: "https://firmware-selector.openwrt.org/", description: "OpenWrt Firmware Builder" },
+        { name: "VIA", url: "https://usevia.app", description: "VIA Configurator" },
+        { name: "QMK", url: "https://config.qmk.fm", description: "QMK Configurator" },
     ]},
-    { "SpeedTest": [
-        { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
-        { name: "Speedtest", url: "https://www.speedtest.net", description: "Internet Speed Test" },
-        { name: "Eir", url: "https://www.eir.ie/helpandsupport/broadbandspeedtest", description: "Internet Speed Test" }
+    { "Security": [
+        { name: "CyberChef", url: "https://gchq.github.io/CyberChef/", description: "CyberChef" },
+        { name: "Zimmermans", url: "https://ericzimmerman.github.io/#!index.md", description: "Eric Zimmermans Tools" },
+        { name: "GTFOBins", url: "https://gtfobins.github.io/", description: "UNIX Escalation Binaries" },
+        { name: "ShellCodes", url: "https://shell-storm.org/shellcode/index.html", description: "ShellCodes" },
+        { name: "OSINT", url: "https://osintframework.com/", description: "OSINT Framework Map" },
+        { name: "Textreader", url: "https://textreader.pro/", description: "Text to Speech" },
+        { name: "Widevine", url: "https://cdrm-project.com/", description: "CDRM and Widevine" },
+        { name: "Massgrave", url: "https://massgrave.dev", description: "Windows Scripts" },
+        { name: "BIOS", url: "https://bios-pw.org/", description: "Laptop BIOS Password" },
     ]},
     { "Flight": [
-        { name: "AirSpace", url: "https://iaa-ie.maps.arcgis.com/apps/instant/basic/index.html?appid=0772db05b2bb488686d3678d8144ae66", description: "Air Space Map" },
+        { name: "AirSpace", url: "https://iaa-ie.maps.arcgis.com/apps/instant/basic/index.html?appid=0772db05b2bb488686d3678d8144ae66", description: "IAA Air Space Map" },
+        { name: "OpenAIP", url: "https://www.openaip.net/map#6.38/53.3442/-8.2491", description: "OpenAIP Map" },
         { name: "NOTAM", url: "https://notaminfo.com/irelandmap", description: "NOTAM Info Map" },
         { name: "EFIS", url: "https://rdamazio.github.io/efis-editor", description: "EFIS Editor" },
         { name: "ADS-B", url: "https://adsb.caldas.ie/?airport=EICK&centerReceiver&zoom=8&enableLabels&extendedLabels=2&noVanish&hideSideBar&rangeRings=0&altitudeChart=1&tempTrails=%3C120%3E&mapDim=0.6", description: "ADS-B Exchange" },
-        { name: "AirLoom", url: "https://objectiveunclear.com/airloom.html?airport=ORK", description: "AirLoom 3D ADS-B Viewer" },
+        { name: "AirLoom", url: "https://objectiveunclear.com/airloom.html?airport=ORK", description: "AirLoom 3D Viewer" },
         { name: "FlightRadar", url: "https://www.flightradar24.com", description: "Flight Radar" },
+        { name: "HeyWhatsThat", url: "https://www.heywhatsthat.com/", description: "Line of Sight & Horizon Tool" },
         { name: "LiveATC", url: "https://www.liveatc.net/search/?icao=eick", description: "Live ATC Radio" },
         { name: "METAR", url: "https://metar-taf.com", description: "METAR & TAFs" },
         { name: "Windy", url: "https://www.windy.com", description: "Weather Map" },
-        { name: "Tide", url: "https://www.tide-forecast.com/locations/Cork/tides/latest", description: "Tide Information" }
+        { name: "Tide", url: "https://www.tide-forecast.com/locations/Cork/tides/latest", description: "Tide Information" },
+    ]},
+    { "Aviation": [
+        { name: "Fleet", url: "https://www.flightdb.net/fleet.php?fleet=IRL", description: "Fleet Database" },
+        { name: "Designators", url: "https://www2023.icao.int/publications/DOC8643/Pages/Search.aspx", description: "Aircraft Designators" },
+        { name: "Countries", url: "https://www.aerotransport.org/html/ICAO_hex_decode.html", description: "ICAO Countries" },
+        { name: "Callsigns", url: "https://123atc.com/call-signs/ireland", description: "Callsigns" },
+    ]},
+    { "Speed": [
+        { name: "Fast", url: "https://fast.com", description: "Internet Speed Test" },
+        { name: "Speedtest", url: "https://www.speedtest.net", description: "Internet Speed Test" },
+        { name: "Eir", url: "https://www.eir.ie/helpandsupport/broadbandspeedtest", description: "Internet Speed Test" },
+    ]},
+    { "Games": [
+        { name: "Roms", url: "https://r-roms.github.io", description: "Roms Center" },
+        { name: "Textures", url: "https://evilgames.eu/texture-packs.htm", description: "Texture packs" },
+        { name: "DS", url: "https://archive.flashcarts.net/", description: "Nintendo DS Flashcarts" },
     ]},
     { "Media": [
-        { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
-        { name: "Roms", url: "https://r-roms.github.io", description: "Roms Center" },
-        { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
         { name: "Stream", url: "https://fmhy.net/videopiracyguide", description: "Movies / Series Stream Compilation" },
-        { name: "RARBG", url: "https://rargb.to", description: "Torrent Tracker" }
+        { name: "Nyaa", url: "https://nyaa.si", description: "Anime Torrent Tracker" },
+        { name: "RARBG", url: "https://rargb.to", description: "Torrent Tracker" },
+        { name: "Hockey", url: "http://onhockey.tv", description: "Ice Hockey Stream" },
+    ]},
+    { "Music": [
+        { name: "Strudel", url: "https://strudel.cc", description: "Music Coding REPL" },
     ]},
     { "Files": [
-        { name: "Authority", url: "https://raw.githubusercontent.com/luis-caldas/mypub/master/ssl/ca.pem", description: "My certificate authority" }
+        { name: "Authority", url: "https://raw.githubusercontent.com/luis-caldas/mypub/master/ssl/ca.pem", description: "My Root Certificate" },
     ]}
 ];
 // Create the entire set
