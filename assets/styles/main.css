@@ -2,20 +2,66 @@
  * Globals
  */
 
+:root {
+  color-scheme: light dark;
+  --page-text: #1f1f1f;
+  --page-shadow: rgba(255, 255, 255, 0.2);
+  --selection-text: #fff;
+  --selection-bg: #222;
+  --overlay-top: rgba(255, 255, 255, 0.20);
+  --overlay-bottom: rgba(255, 255, 255, 0.20);
+  --search-bg: rgba(255, 255, 255, 0.9);
+  --search-text: #222;
+  --search-border: rgba(34, 34, 34, 0.16);
+  --search-shadow: rgba(0, 0, 0, 0.12);
+  --search-caret: rgba(0, 0, 0, 0.5);
+  --placeholder: #666;
+  --button-bg: rgba(255, 255, 255, 0.88);
+  --button-text: #1f1f1f;
+  --button-border: rgba(34, 34, 34, 0.18);
+  --button-hover-bg: #1f1f1f;
+  --button-hover-text: #f5f5f5;
+  --button-hover-border: #1f1f1f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-text: #f5f5f5;
+    --page-shadow: rgba(0, 0, 0, 0.5);
+    --selection-text: #fff;
+    --selection-bg: #222;
+    --overlay-top: rgba(0, 0, 0, 0.7);
+    --overlay-bottom: rgba(0, 0, 0, 0.7);
+    --search-bg: rgba(255, 255, 255, 0.94);
+    --search-text: #222;
+    --search-border: rgba(255, 255, 255, 0.35);
+    --search-shadow: rgba(0, 0, 0, 0.45);
+    --search-caret: rgba(0, 0, 0, 0.5);
+    --placeholder: #666;
+    --button-bg: rgba(255, 255, 255, 0.94);
+    --button-text: #1f1f1f;
+    --button-border: rgba(255, 255, 255, 0.5);
+    --button-hover-bg: #161616;
+    --button-hover-text: #f5f5f5;
+    --button-hover-border: #2a2a2a;
+  }
+}
+
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:focus {
-  color: #333;
-  background-color: #fff !important;
-  border-color: #fff !important;
+  color: var(--button-text) !important;
+  background-color: var(--button-bg) !important;
+  border-color: var(--button-border) !important;
   border-width: 0.2rem;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none;
 }
 
-.btn-secondary:hover {
-  color: rgb(216, 216, 216);
-  border-color: rgb(29, 29, 29)!important;
-  background-color: rgb(20, 20, 20)!important;
+.btn-secondary:hover,
+.btn-secondary:active {
+  color: var(--button-hover-text) !important;
+  border-color: var(--button-hover-border) !important;
+  background-color: var(--button-hover-bg) !important;
 }
 
 /*
@@ -24,23 +70,31 @@
 
 @font-face {
   font-family: "Courier Prime";
-  src: url('/assets/fonts/courier-prime.ttf')  format('truetype');
+  src: url('/assets/fonts/courier-prime.ttf') format('truetype');
 }
 
 ::selection {
-  color: #fff;
-  background: #222;
+  color: var(--selection-text);
+  background: var(--selection-bg);
+}
+
+html,
+body {
+  min-height: 100%;
 }
 
 body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  color: var(--page-text);
+  text-shadow: 0 .05rem .1rem var(--page-shadow);
   background-image:
-        linear-gradient(
-          rgba(0, 0, 0, 0.7),
-          rgba(0, 0, 0, 0.7)
-        ), url("/assets/images/main.png");
+    linear-gradient(
+      var(--overlay-top),
+      var(--overlay-bottom)
+    ),
+    url("/assets/images/main.png");
   background-repeat: repeat;
   font-family: "Courier Prime", monospace;
+  transition: color 0.2s ease, background-image 0.2s ease;
 }
 
 .bd-placeholder-img {
@@ -84,15 +138,16 @@ form#search-form {
   height: 3.5rem;
   font-size: 1rem;
   line-height: 1.5;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--search-bg);
+  color: var(--search-text);
   margin: 40vh auto auto;
   padding: 0;
   text-align: center;
   box-sizing: border-box;
-  border: 3px solid #fff;
+  border: 3px solid var(--search-border);
   border-radius: 8px;
-  box-shadow: 4px 4px 10px #0c0c0c;
+  box-shadow: 4px 4px 10px var(--search-shadow);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 div.search-box-wrap {
@@ -125,14 +180,15 @@ input#search-box {
   overflow: hidden;
   text-overflow: ellipsis;
   color: inherit;
-  caret-color: #0000007F;
+  caret-color: var(--search-caret);
   caret-shape: block;
-  font-weight: 700!important;
+  font-weight: 700 !important;
 }
+
 ::placeholder {
-  color: #666;
+  color: var(--placeholder);
   text-transform: uppercase;
-  font-weight: 700!important;
+  font-weight: 700 !important;
   opacity: 1;
 }
 
@@ -158,7 +214,7 @@ button.search-button {
   margin: 0;
   width: 4rem;
   background: transparent;
-  opacity: .56;
+  opacity: 0.56;
   border: none;
   position: relative;
   height: 100%;

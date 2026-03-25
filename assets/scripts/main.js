@@ -157,7 +157,7 @@ function main(websitesData) {
     };
     let createBlock = (linksList, blockName) => {
         let block = $("<div>", { class: "d-grid p-2" });
-        let header = $("<div>", { class: "h4 float-start m-2 px-2" }).append(blockName.toUpperCase());
+        let header = $("<div>", { class: "h4 float-start m-2 px-2 fw-bold" }).append(blockName.toUpperCase());
         let simpleDiv = $("<div>");
         block.append(header);
         linksList.forEach(function (item) {
