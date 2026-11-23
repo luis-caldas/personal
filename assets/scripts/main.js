@@ -65,6 +65,9 @@ const bottomInfo = [
         { name: "Massgrave", url: "https://massgrave.dev", description: "Windows Scripts" },
         { name: "BIOS", url: "https://bios-pw.org", description: "Laptop BIOS Password" },
     ]},
+    { "Ireland": [
+        { name: "Abair", url: "https://abair.ie", description: "Irish Text to Speech" },
+    ]},
     { "Flight": [
         { name: "AirSpace", url: "https://iaa-ie.maps.arcgis.com/apps/instant/basic/index.html?appid=0772db05b2bb488686d3678d8144ae66", description: "IAA Air Space Map" },
         { name: "OpenAIP", url: "https://www.openaip.net/map#6.38/53.3442/-8.2491", description: "OpenAIP Map" },
