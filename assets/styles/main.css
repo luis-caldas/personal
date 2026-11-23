@@ -7,8 +7,6 @@
   --page-text: #1f1f1f;
   --selection-text: #fff;
   --selection-bg: #222;
-  --overlay-top: rgba(255, 255, 255, 0.20);
-  --overlay-bottom: rgba(255, 255, 255, 0.20);
   --search-bg: rgba(255, 255, 255, 0.9);
   --search-text: #222;
   --search-border: rgba(34, 34, 34, 0.16);
@@ -28,8 +26,6 @@
     --page-text: #f5f5f5;
     --selection-text: #fff;
     --selection-bg: #222;
-    --overlay-top: rgba(0, 0, 0, 0.7);
-    --overlay-bottom: rgba(0, 0, 0, 0.7);
     --search-bg: rgba(255, 255, 255, 0.94);
     --search-text: #222;
     --search-border: rgba(255, 255, 255, 0.35);
@@ -84,13 +80,9 @@ body {
 body {
   color: var(--page-text);
   background-image:
-    linear-gradient(
-      var(--overlay-top),
-      var(--overlay-bottom)
-    ),
     url("https://raw.githubusercontent.com/luis-caldas/myimages/master/images/camo/irish-dpm-mono-light.png");
   background-repeat: repeat;
-  background-size: auto, 40% auto;
+  background-size: 40% auto;
   background-position: center;
   font-family: "Courier Prime", monospace;
 }
@@ -98,10 +90,6 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background-image:
-      linear-gradient(
-        var(--overlay-top),
-        var(--overlay-bottom)
-      ),
       url("https://raw.githubusercontent.com/luis-caldas/myimages/master/images/camo/irish-dpm-mono-dark.png");
   }
 }
