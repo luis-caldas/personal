@@ -94,6 +94,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  body {
+    background-size: 90% auto;
+  }
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
