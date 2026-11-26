@@ -82,7 +82,7 @@ body {
   background-image:
     url("https://raw.githubusercontent.com/luis-caldas/myimages/master/images/camo/irish-dpm-mono-light.png");
   background-repeat: repeat;
-  background-size: 40% auto;
+  background-size: calc(100vmax * 1024 / 4608) auto;
   background-position: center;
   font-family: "Courier Prime", monospace;
 }
@@ -91,12 +91,6 @@ body {
   body {
     background-image:
       url("https://raw.githubusercontent.com/luis-caldas/myimages/master/images/camo/irish-dpm-mono-dark.png");
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    background-size: 90% auto;
   }
 }
 
